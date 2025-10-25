@@ -1,0 +1,30 @@
+{
+  "name": "example-04-building-a-real-cli",
+  "version": "1.0.0",
+  "description": "Turn a Node script into a real CLI with bin + npx + stdin + JSON output.",
+  "main": "app.js",
+  "bin": {
+    "example04": "./app.js"
+  },
+  "scripts": {
+    "hello": "node app.js hello",
+    "sum": "node app.js sum",
+    "upper": "node app.js upper",
+    "version": "node app.js version"
+  },
+  "keywords": [
+    "npm",
+    "bin",
+    "cli",
+    "npx",
+    "stdin",
+    "args"
+  ],
+  "author": "NPM Mastery Course",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
