@@ -1,0 +1,44 @@
+{
+  "name": "package-json-essentials",
+  "version": "1.0.0",
+  "description": "Example demonstrating package.json structure, safe mutations, and validation.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "inspect": "node inspect-package-json.js",
+    "validate": "node inspect-package-json.js validate",
+    "entries": "node inspect-package-json.js entries",
+    "bump:patch": "node inspect-package-json.js bump patch",
+    "bump:minor": "node inspect-package-json.js bump minor",
+    "bump:major": "node inspect-package-json.js bump major"
+  },
+  "keywords": [
+    "npm",
+    "package.json",
+    "scripts",
+    "exports",
+    "semver"
+  ],
+  "author": "NPM Mastery Course",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.9.0",
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/your/repo.git"
+  },
+  "bugs": {
+    "url": "https://example.com/your/repo/issues"
+  },
+  "homepage": "https://example.com/your/repo#readme"
+}
