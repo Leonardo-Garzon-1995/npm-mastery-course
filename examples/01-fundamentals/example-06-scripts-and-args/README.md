@@ -60,6 +60,7 @@ npm install
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "greet": "node script-runner.js --task=greet",
+    "greet-name": "npm run greet --",  
     "start-dev": "node script-runner.js --task=start",
     "configure-env": "node script-runner.js --task=configure",
     "dev": "npm run start-dev -- --port=3000",
@@ -76,7 +77,7 @@ npm install
   "author": "NPM Mastery Course",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.2", 
     "minimist": "^1.2.8"
   }
 }

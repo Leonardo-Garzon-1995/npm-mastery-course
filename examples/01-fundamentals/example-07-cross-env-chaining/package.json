@@ -1,0 +1,26 @@
+{
+  "name": "example-07-cross-env-chaining",
+  "version": "1.0.1",
+  "description": "Demonstrates cross-platform script chaining and environment variables (Beginner-Friendly).",
+  "main": "build-script.js",
+  "scripts": {
+    "clean": "node build-script.js --task=cleanup",
+    "set-env": "cross-env NODE_ENV=development node build-script.js --task=setenv",
+    "compile": "node build-script.js --task=compile",
+    "build:pipeline": "node build-script.js --task=pipeline",
+    "build:dev": "cross-env NODE_ENV=development npm run build:pipeline",
+    "build:prod": "cross-env NODE_ENV=production npm run build:pipeline",
+    "build:all": "npm run clean && npm run set-env && npm run compile",
+    "build:report": "npm run build:prod -- --report"
+  },
+  "keywords": ["npm", "cross-env", "chaining", "build"],
+  "author": "NPM Mastery Course",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
