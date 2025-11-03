@@ -1,6 +1,8 @@
-## Hands-On Exercises
+# Hands-On Exercises
 
-### Exercise 1.1: Installation Verification
+[🏠 Home](../README.md) | [Back to module 01](/modules/01-fundamentals.md) | [Next Exercise →](/exercises/02-package-json-exer.md)
+
+## Exercise 1.1: Installation Verification
 
 **Objective:** Verify your NPM installation and understand version information.
 
@@ -8,7 +10,7 @@
 1. Open your terminal
 2. Check Node.js version: `node --version`
 3. Check NPM version: `npm --version`
-4. Update NPM to the latest: `npm install -g npm@latest`
+4. Update NPM to the latest (if needed): `npm install -g npm@latest`
 5. Verify the update: `npm --version`
 
 **Expected Outcome:** You should see version numbers for both Node and NPM, and NPM should be updated to the latest version.
@@ -22,7 +24,7 @@ $ npm --version
 10.x.x (or latest)
 ```
 
-### Exercise 1.2: Configuration Setup
+## Exercise 1.2: Configuration Setup
 
 **Objective:** Configure NPM with your personal information.
 
@@ -35,12 +37,12 @@ $ npm --version
 
 **Expected Outcome:** Your configuration should be saved and visible when you list it.
 
-### Exercise 1.3: First Project
+## Exercise 1.3: First Project
 
 **Objective:** Create your first NPM project with proper configuration.
 
 **Steps:**
-1. Create a directory: `mkdir npm-learning`
+1. Create a directory(in a new folder): `mkdir npm-learning`
 2. Navigate into it: `cd npm-learning`
 3. Initialize NPM: `npm init`
 4. Answer the prompts (or use `npm init -y` for defaults)
@@ -50,7 +52,7 @@ $ npm --version
 
 **Expected Outcome:** A working NPM project with a proper package.json file.
 
-### Exercise 1.4: Exploring Packages
+## Exercise 1.4: Exploring Packages
 
 **Objective:** Learn to research packages before installing them.
 
@@ -67,11 +69,13 @@ $ npm --version
 - How many dependencies does it have?
 - What's its weekly download count? (check on npmjs.com)
 
+You can also try to explore other packages, such as "axios", "chalk", "string-pro" or "react".
+
 ---
 
-## Common Pitfalls
+# Common Pitfalls
 
-### Pitfall 1: Permission Errors on Global Install
+## Pitfall 1: Permission Errors on Global Install
 
 **Problem:**
 ```bash
@@ -96,7 +100,7 @@ export PATH=~/.npm-global/bin:$PATH
 source ~/.bashrc
 ```
 
-### Pitfall 2: Outdated NPM Version
+## Pitfall 2: Outdated NPM Version
 
 **Problem:** Using an old NPM version with newer features.
 
@@ -105,7 +109,7 @@ source ~/.bashrc
 npm install -g npm@latest
 ```
 
-### Pitfall 3: Wrong Registry
+## Pitfall 3: Wrong Registry
 
 **Problem:** Cannot find packages or slow downloads.
 
@@ -118,7 +122,7 @@ npm config get registry
 npm config set registry https://registry.npmjs.org/
 ```
 
-### Pitfall 4: Configuration Conflicts
+## Pitfall 4: Configuration Conflicts
 
 **Problem:** Settings not being applied.
 
