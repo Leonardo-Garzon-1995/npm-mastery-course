@@ -14,7 +14,7 @@ Welcome to Module 1 of the NPM Mastery Course! This module introduces you to Nod
 - Configure NPM for your development environment
 - Navigate basic NPM commands
 
-**Estimated Time:** 45-60 minutes
+
 
 ---
 
@@ -30,7 +30,7 @@ NPM (Node Package Manager) is the default package manager for Node.js. It serves
 
 ### Why is NPM Important?
 
-NPM revolutionized JavaScript development by making other developers' code (or even your own code) available for reuse. Here are some key benefits of NPM:
+NPM revolutionized JavaScript development by making other developers' code (or even your own code) available for reuse. Some key benefits of NPM are:
 - **Code Reusability**: Don't reinvent the wheel - use existing packages
 - **Version Management**: Track and manage different versions of libraries
 - **Dependency Resolution**: Automatically handle complex dependency trees
@@ -41,17 +41,17 @@ NPM revolutionized JavaScript development by making other developers' code (or e
 
 ```
 ┌─────────────────────────────────────┐
-│         NPM Registry               │
-│   (registry.npmjs.org)             │
-│   - 2M+ packages                   │
-│   - Package metadata               │
+│         NPM Registry                │
+│   (registry.npmjs.org)              │
+│   - 2M+ packages                    │
+│   - Package metadata                │
 └─────────────────────────────────────┘
               ↕
 ┌─────────────────────────────────────┐
 │         NPM CLI                     │
-│   - Install packages               │
-│   - Publish packages               │
-│   - Manage dependencies            │
+│   - Install packages                │
+│   - Publish packages                │
+│   - Manage dependencies             │
 └─────────────────────────────────────┘
               ↕
 ┌─────────────────────────────────────┐
@@ -75,7 +75,7 @@ You need Node.js installed on your system. NPM comes bundled with Node.js.
 **Windows:**
 1. Download the installer from [nodejs.org](https://nodejs.org/)
 2. Run the installer
-3. Follow the installation wizard
+3. Follow the installation instructions
 4. Restart your terminal
 
 **macOS:**
@@ -447,7 +447,7 @@ npm config list
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/01-fundamentals-exer.md) for this section for the full instructions on how to complete each exercise.
 
@@ -469,7 +469,7 @@ npm config list
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 1. **Keep NPM Updated:** Regularly update to get latest features and security fixes
    ```bash
@@ -539,7 +539,7 @@ Now that you understand NPM fundamentals, you're ready to dive deep into the hea
 
 Have questions about this module? Start a discussion in our [GitHub Discussions](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/discussions).
 
-Found an error or want to contribute? Check our [Contributing Guide](../CONTRIBUTING.md).
+Found an error or want to contribute? Check our [Contribution Guide](../CONTRIBUTING.md).
 
 ---
 
