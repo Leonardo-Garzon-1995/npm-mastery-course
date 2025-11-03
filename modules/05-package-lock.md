@@ -33,15 +33,15 @@ npm install express  # Installs express@4.18.2
 npm install  # Installs express@4.19.0 (newer version released)
 ```
 
-**Problem:** You're running different versions! 😱
+**Problem:** You're running different versions!
 
 ### The Solution: package-lock.json
 
 When you run `npm install`, NPM creates `package-lock.json` that:
-- 🔒 **Locks** exact versions of every package
-- 📝 **Records** the entire dependency tree
-- 🎯 **Ensures** everyone gets identical installations
-- ⚡ **Speeds up** subsequent installs
+- **Locks** exact versions of every package
+- **Records** the entire dependency tree
+- **Ensures** everyone gets identical installations
+- **Speeds up** subsequent installs
 
 ### Key Differences
 
@@ -193,11 +193,10 @@ npm install
 ```
 
 **NPM:**
-1. 📖 Reads package.json
-2. 🔍 Resolves version ranges
-3. 📥 Downloads latest compatible versions
-4. 💾 Creates package-lock.json
-5. ⏱️ Slower first time
+1. Reads package.json
+2. Resolves version ranges
+3. Downloads latest compatible versions
+4. Creates package-lock.json
 
 ### npm install vs npm ci
 
@@ -227,9 +226,9 @@ npm ci
 
 ## 5.4 Managing Package-lock.json
 
-### Should You Commit It?
+### Should You Commit It to Git?
 
-**YES! Always commit package-lock.json to Git.** ✅
+**YES! Always commit package-lock.json to Git.** 
 
 ```bash
 git add package-lock.json
@@ -237,11 +236,11 @@ git commit -m "Add/update dependencies"
 ```
 
 **Why commit it:**
-- ✅ Team gets same versions
-- ✅ CI/CD gets same versions
-- ✅ Production gets tested versions
-- ✅ Faster installs for everyone
-- ✅ Security - verified packages
+- Team gets same versions
+- CI/CD gets same versions
+- Production gets tested versions
+- Faster installs for everyone
+- Security - verified packages
 
 ### When It Updates
 
@@ -286,7 +285,7 @@ rm package-lock.json
 npm install
 ```
 
-**⚠️ Warning:** Always commit the new lock file after recreating it!
+** Warning:** Always commit the new lock file after recreating it!
 
 ---
 
@@ -305,10 +304,10 @@ npm install
 ```
 
 **What happens:**
-- ✅ NPM uses package-lock.json
-- ✅ Installs exact versions
-- ✅ Fast installation
-- ✅ Identical to other developers
+- NPM uses package-lock.json
+- Installs exact versions
+- Fast installation
+- Identical to other developers
 
 ### Scenario 2: Adding a New Package
 
@@ -319,11 +318,11 @@ npm install axios
 ```
 
 **What happens:**
-- ✅ Axios added to package.json
-- ✅ Exact version added to package-lock.json
-- ✅ All of axios's dependencies added to lock
-- ✅ Lock file updated
-- ✅ Commit both files
+- Axios added to package.json
+- Exact version added to package-lock.json
+- All of axios's dependencies added to lock
+- Lock file updated
+- Commit both files
 
 ### Scenario 3: Updating Packages
 
@@ -338,10 +337,10 @@ npm update
 ```
 
 **What happens:**
-- ✅ package.json ranges respected
-- ✅ Packages updated within ranges
-- ✅ package-lock.json updated with new versions
-- ✅ Commit updated lock file
+- package.json ranges respected
+- Packages updated within ranges
+- package-lock.json updated with new versions
+- Commit updated lock file
 
 ### Scenario 4: Merge Conflicts
 
@@ -449,16 +448,16 @@ npm ci
 ### Why Both Files?
 
 **package.json:**
-- 📝 Human-editable
-- 🎯 Defines what you want
-- 🔄 Flexible version ranges
-- 📖 Readable and maintainable
+- Human-editable
+- Defines what you want
+- Flexible version ranges
+- Readable and maintainable
 
 **package-lock.json:**
-- 🤖 Auto-generated
-- 🔒 Defines what you got
-- 📌 Exact versions
-- 🔐 Reproducible installs
+- Auto-generated
+- Defines what you got
+- Exact versions
+- Reproducible installs
 
 ---
 
@@ -555,7 +554,7 @@ git push
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/05-package-lock-exer.md) for this section
 
@@ -577,7 +576,7 @@ git push
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Always Commit package-lock.json
 

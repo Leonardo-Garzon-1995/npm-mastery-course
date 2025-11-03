@@ -157,10 +157,10 @@ when you install a package globally, it means you can use it from anywhere on yo
 
 ```bash
 # Install globally
-npm install -g nodemon
+npm install -g <package-name>
 
 # Or
-npm install --global nodemon
+npm install --global <package-name>
 
 # Multiple global packages
 npm i -g create-react-app typescript
@@ -204,7 +204,7 @@ npm config get prefix
 - ❌ Different projects need different versions
 - ❌ You're working in a team (use local instead)
 
-**Better alternative to global:** Use `npx` (covered in Module 11)
+**Better alternative to global:** Use `npx` (covered in [Module 11](11-advanced-features.md))
 
 ```bash
 # Instead of installing globally

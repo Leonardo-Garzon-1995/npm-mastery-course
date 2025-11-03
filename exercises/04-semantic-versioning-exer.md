@@ -1,5 +1,7 @@
 # Hands-On Exercises
 
+[← Previous Exercise](03-installing-packages-exer.md) | [🏠 Home](../README.md) | [Back to module 03](/modules/04-semantic-versioning.md) | [Next Exercise →](05-package-lock-exer.md)
+
 ## Exercise 4.1: Understanding Version Numbers
 
 **Objective:** Identify what type of change each version bump represents.
@@ -171,5 +173,4 @@ npm list lodash
   }
 }
 ```
-
 ---

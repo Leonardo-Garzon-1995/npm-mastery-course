@@ -20,6 +20,9 @@ The `package.json` file is the heart of every NPM project. This module explores 
 
 `package.json` describes your project and manages its dependencies, scripts, and metadata.
 
+1. It identifies your project with a name, version, description, author and license.
+2. It manages all the dependencies used in your project. This includes both production and development dependencies.
+
 ### Initializing a New Project
 
 There are two ways to create a package.json:
@@ -62,7 +65,6 @@ npm config set init-author-url "https://yoursite.com"
 npm config set init-license "MIT"
 npm config set init-version "0.1.0"
 ```
-
 ---
 
 ## 2.2 Package.json Structure
@@ -125,10 +127,10 @@ Here's a complete example with all important fields:
 
 ### Essential Fields
 
-#### <u>name</u>
+#### I. "name"
 The package identifier. Must be unique if publishing to NPM.
 
-**Rules:**
+**Rules for naming NPM projects:**
 - Must be lowercase
 - No spaces (use hyphens)
 - URL-safe characters only
@@ -142,8 +144,8 @@ The package identifier. Must be unique if publishing to NPM.
 }
 ```
 
-#### version
-Semantic version number (MAJOR.MINOR.PATCH)More about this topic [in module 4](04-semantic-versioning.md).
+#### II. "version"
+Semantic version number (MAJOR.MINOR.PATCH) More about this topic [in module 4](04-semantic-versioning.md).
 
 
 ```json
@@ -154,7 +156,7 @@ Semantic version number (MAJOR.MINOR.PATCH)More about this topic [in module 4](0
 }
 ```
 
-#### description
+#### III. "description"
 Brief description of your package (shown in NPM search). 
 ```json
 {
@@ -167,8 +169,8 @@ Brief description of your package (shown in NPM search).
 - Make it searchable
 - Be specific and clear
 
-#### main
-Entry point of your package - the file that gets loaded when someone requires your package
+#### VI. "main"
+Entry point of your package - this file gets loaded when someone requires(`imports`) your package.
 
 ```json
 {
@@ -186,19 +188,19 @@ const myPackage = require('my-package');
 // Node loads the file specified in "main"
 ```
 
-#### type
+#### V. "type"
 Specifies module system (added in Node 12+)
 
 ```json
 {
-  "type": "commonjs"    // Default: module.exports/require
+  "type": "commonjs"    // Default: module.exports/require()
   "type": "module"      // ES Modules: export/import
 }
 ```
 
 ### Author & Contributors
 
-#### author
+#### VI. "author"
 Package author information
 
 **Simple format:**
@@ -240,7 +242,7 @@ Array of people who contributed
 
 ### Repository & Links
 
-#### repository
+#### VII. "repository"
 Link to source code
 
 ```json
@@ -259,7 +261,7 @@ Link to source code
 }
 ```
 
-#### bugs
+#### VIII. "bugs"
 Where to report issues
 
 ```json
@@ -271,7 +273,7 @@ Where to report issues
 }
 ```
 
-#### homepage
+#### IX. "homepage"
 Project homepage or documentation
 
 ```json
@@ -282,7 +284,7 @@ Project homepage or documentation
 
 ### Engine Requirements
 
-#### engines
+#### X. "engines"
 Specify Node/NPM version requirements
 
 ```json
@@ -312,7 +314,7 @@ engine-strict=true
 
 ### License
 
-#### license
+#### XI. "license"
 Specifies how others can use your code
 
 ```json
@@ -334,7 +336,7 @@ Specifies how others can use your code
 
 ### Keywords
 
-#### keywords
+#### XII. "keywords"
 Array of keywords for NPM search
 
 ```json
@@ -358,7 +360,7 @@ Array of keywords for NPM search
 
 ### Privacy
 
-#### private
+#### XIII. "private"
 Prevents accidental publishing to NPM
 
 ```json
@@ -403,7 +405,7 @@ The `scripts` field defines commands you can run with `npm run`.
 - `npm run build`
 - `npm run lint`
 
-We'll dive deep into scripts in Module 6!
+We'll dive deep into scripts in [Module 6](06-npm-scripts.md)!
 
 ---
 
@@ -692,7 +694,7 @@ Specify which CPU architectures your package supports
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/02-package-json-exer.md) for this section
 

@@ -1,5 +1,7 @@
 # Hands-On Exercises
 
+[← Previous Exercise](02-package-json-exer.md) | [🏠 Home](../README.md) | [Back to module 03](/modules/03-installing-packages.md) | [Next Exercise →](04-semantic-versioning-exer.md)
+
 ## Exercise 3.1: Basic Package Installation
 
 **Objective:** Practice installing packages as dependencies and devDependencies.

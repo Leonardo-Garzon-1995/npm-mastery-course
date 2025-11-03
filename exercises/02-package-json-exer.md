@@ -1,5 +1,7 @@
 # Hands-On Exercises
 
+[← Previous Exercise](01-fundamentals-exer.md) | [🏠 Home](../README.md) | [Back to module 02](/modules/02-package-json.md) | [Next Exercise →](03-installing-packages-exer.md)
+
 ## Exercise 2.1: Create a Basic Package.json
 
 **Objective:** Create a package.json file with proper configuration.

@@ -11,7 +11,6 @@ Understanding semantic versioning (semver) is crucial for managing dependencies 
 **Learning Objectives:**
 - Understand semantic versioning format (MAJOR.MINOR.PATCH)
 - Master version symbols (^, ~, *, etc.)
-- Learn the difference between caret and tilde
 - Specify version ranges correctly
 - Understand how NPM resolves versions
 
@@ -505,7 +504,7 @@ What if two packages need different versions?
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/04-semantic-versioning-exer.md) for this section
 
@@ -527,7 +526,7 @@ What if two packages need different versions?
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Use Caret (^) for Most Dependencies
 
