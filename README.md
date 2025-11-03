@@ -125,17 +125,24 @@ We welcome contributions from the community! Whether it's:
 - Suggesting new topics
 - Suggesting new exercises
 
-Please read our **[Contributing Guidelines](CONTRIBUTING.md)** before submitting a pull request.
+Please read our **[Contribution Guidelines](CONTRIBUTING.md)** before submitting a pull request.
 
 ### Quick Contribution Guide
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-addition`)
-3. Make your changes
-4. Commit with clear messages (`git commit -m 'Add example for npm workspaces'`)
-5. Push to your fork (`git push origin feature/amazing-addition`)
-6. Open a Pull Request
+2. Clone your fork locally `git clone https://github.com/your-username/npm-mastery-course.git`
+3. Create a feature branch `git checkout -b feature/amazing-addition`
+4. Make your changes
+5. Commit with clear messages `git commit -m 'Add example for npm workspaces'`
+6. Push to your fork `git push origin feature/amazing-addition`
+7. Open a Pull Request
 
 Feel free to contribute whether you're a beginner or an expert!
+
+## Thank you to all contributors 
+
+<a href = "https://github.com/Leonardo-Garzon-1995/npm-mastery-course/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=Leonardo-Garzon-1995/npm-mastery-course"/>
+ </a>
 
 ## License
 
