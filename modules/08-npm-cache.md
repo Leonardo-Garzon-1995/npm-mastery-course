@@ -28,11 +28,11 @@ The NPM cache is a local storage where NPM keeps copies of downloaded packages. 
 3. If no, downloads from registry and adds to cache
 
 **Benefits:**
-- ⚡ Faster installations
-- 💾 Offline package installation
-- 🔒 Integrity verification
-- 📦 Reduced network usage
-- 🌐 Works when registry is down
+- Faster installations
+- Offline package installation
+- Integrity verification
+- Reduced network usage
+- Works when registry is down
 
 ### How the Cache Works
 
@@ -213,7 +213,7 @@ npm cache clean --force
 - Next installs will be slower
 - Downloads all packages fresh
 
-**⚠️ Warning:** Only clean cache when troubleshooting!
+**Warning:** Only clean cache when troubleshooting!
 
 ### When to Clean the Cache
 
@@ -478,13 +478,13 @@ npm cache verify
 
 ### 1. Don't Clean Cache Regularly
 
-**❌ Bad practice:**
+**Bad practice:**
 ```bash
 # In your scripts
 "preinstall": "npm cache clean --force"
 ```
 
-**✅ Good practice:**
+**Good practice:**
 ```bash
 # Only clean when troubleshooting
 npm cache verify  # Use this instead
@@ -559,7 +559,7 @@ SIZE=$(du -sm ~/.npm | cut -f1)
 echo "Cache size: ${SIZE} MB"
 
 if [ $SIZE -gt 5000 ]; then
-  echo "⚠️  Cache is large (>5GB)"
+  echo "Cache is large (>5GB)"
   echo "Consider running: npm cache clean --force"
 fi
 ```
@@ -656,33 +656,33 @@ npm install
 #!/bin/bash
 # cache-maintenance.sh
 
-echo "🔍 NPM Cache Maintenance"
+echo "NPM Cache Maintenance"
 echo "======================="
 
 # Show current cache status
-echo -e "\n📊 Current cache status:"
+echo -e "\n Current cache status:"
 npm cache verify
 
 # Get cache size
 CACHE_SIZE=$(du -sm ~/.npm 2>/dev/null | cut -f1)
-echo -e "\n💾 Cache size: ${CACHE_SIZE} MB"
+echo -e "\nCache size: ${CACHE_SIZE} MB"
 
 # Check if cache is large
 if [ $CACHE_SIZE -gt 5000 ]; then
-  echo -e "\n⚠️  Cache is large (>5GB)"
+  echo -e "\n  Cache is large (>5GB)"
   read -p "Clean cache? (y/n) " -n 1 -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "🧹 Cleaning cache..."
+    echo " Cleaning cache..."
     npm cache clean --force
-    echo "✅ Cache cleaned"
+    echo " Cache cleaned"
     npm cache verify
   fi
 else
-  echo -e "\n✅ Cache size is reasonable"
+  echo -e "\n Cache size is reasonable"
 fi
 
-echo -e "\n✅ Maintenance complete"
+echo -e "\n Maintenance complete"
 ```
 
 ### Example 2: Installation with Cache Fallback
@@ -691,25 +691,25 @@ echo -e "\n✅ Maintenance complete"
 #!/bin/bash
 # install-with-fallback.sh
 
-echo "📦 Installing dependencies..."
+echo " Installing dependencies..."
 
 # Try regular install (uses cache)
 if npm install; then
-  echo "✅ Installation successful"
+  echo " Installation successful"
   exit 0
 fi
 
-echo "⚠️  Installation failed, trying cache clean..."
+echo "Installation failed, trying cache clean..."
 
 # Clean cache and retry
 npm cache clean --force
 
 if npm install; then
-  echo "✅ Installation successful after cache clean"
+  echo " Installation successful after cache clean"
   exit 0
 fi
 
-echo "❌ Installation failed even after cache clean"
+echo " Installation failed even after cache clean"
 exit 1
 ```
 
@@ -744,29 +744,29 @@ test:
 #!/bin/bash
 # setup-offline-dev.sh
 
-echo "🚀 Setting up for offline development..."
+echo " Setting up for offline development..."
 
 # Set prefer-offline
 npm config set prefer-offline true
 
 # Cache all dependencies
-echo "📦 Caching project dependencies..."
+echo " Caching project dependencies..."
 npm install
 
 # Cache common packages
-echo "📦 Caching common packages..."
+echo " Caching common packages..."
 npm cache add lodash
 npm cache add express
 npm cache add react
 npm cache add axios
 
-echo "✅ Ready for offline development!"
-echo "📝 To revert: npm config delete prefer-offline"
+echo "Ready for offline development!"
+echo "To revert: npm config delete prefer-offline"
 ```
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/08-npm-cache-exer.md) for this section
 
@@ -792,7 +792,7 @@ echo "📝 To revert: npm config delete prefer-offline"
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Trust the Cache
 

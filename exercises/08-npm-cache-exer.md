@@ -1,5 +1,7 @@
 # Hands-On Exercises
 
+[← Previous Exercise](07-managing-packages-exer.md) | [🏠 Home](../README.md) | [Back to module 08](/modules/08-npm-cache.md) | [Next Exercise →](09-security-auditing-exer.md)
+
 ## Exercise 8.1: Exploring the Cache
 
 **Objective:** Understand where cache is stored and what it contains.

@@ -27,12 +27,12 @@ NPM has powerful advanced features that can significantly improve your developme
 **Workspaces** allow you to manage multiple packages within a single repository (monorepo).
 
 **Benefits:**
-- 🏗️ Manage multiple packages together
-- 🔗 Link local dependencies automatically
-- 📦 Share dependencies across packages
-- ⚡ Faster installs with shared cache
-- 🧪 Test packages together
-- 🚀 Deploy as a unit
+- Manage multiple packages together
+- Link local dependencies automatically
+- Share dependencies across packages
+- Faster installs with shared cache
+- Test packages together
+- Deploy as a unit
 
 ### Setting Up Workspaces
 
@@ -211,11 +211,11 @@ npm version minor --workspaces
 **npx** executes NPM packages without installing them globally.
 
 **Benefits:**
-- ⚡ Run packages without installation
-- 🔄 Always use latest version
-- 💾 Save disk space
-- 🧪 Test packages easily
-- 🚀 Run one-time scripts
+- Run packages without installation
+- Always use latest version
+- Save disk space
+- Test packages easily
+- Run one-time scripts
 
 ### Basic npx Usage
 
@@ -508,10 +508,10 @@ npm ls --link=true
 **Aliases** allow you to install packages under different names.
 
 **Use cases:**
-- 📦 Use multiple versions simultaneously
-- 🔄 Migrate between packages gradually
-- 🏷️ Rename packages for clarity
-- 🧪 Test different versions
+- Use multiple versions simultaneously
+- Migrate between packages gradually
+- Rename packages for clarity
+- Test different versions
 
 ### Creating Aliases
 
@@ -597,11 +597,11 @@ npm install my-lodash@npm:lodash@4.17.21
 **Custom registries** are alternative sources for NPM packages.
 
 **Use cases:**
-- 🏢 Private company packages
-- 🔒 Security scanning
-- 📦 Package caching/mirroring
-- 🌍 Regional mirrors
-- 🧪 Testing registry
+- Private company packages
+- Security scanning
+- Package caching/mirroring
+- Regional mirrors
+- Testing registry
 
 ### Setting Registry
 
@@ -1111,7 +1111,7 @@ registry=https://registry.npmjs.org/
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/11-advanced-features-exer.md) for this section for the full instructions on how to complete each exercise.
 
@@ -1137,42 +1137,42 @@ registry=https://registry.npmjs.org/
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Workspaces
 
-- ✅ Mark workspace root as private
-- ✅ Use consistent naming (@scope/package)
-- ✅ Keep shared dependencies in root
-- ✅ Use workspace protocols for internal deps
+- Mark workspace root as private
+- Use consistent naming (@scope/package)
+- Keep shared dependencies in root
+- Use workspace protocols for internal deps
 
 ### 2. npx
 
-- ✅ Use for one-time commands
-- ✅ Specify versions when important
-- ✅ Use `-y` flag in CI/CD
-- ✅ Clear cache periodically
+- Use for one-time commands
+- Specify versions when important
+- Use `-y` flag in CI/CD
+- Clear cache periodically
 
 ### 3. npm link
 
-- ✅ Link in correct order (global first)
-- ✅ Unlink when done
-- ✅ Document linked packages
-- ✅ Use for development only
+- Link in correct order (global first)
+- Unlink when done
+- Document linked packages
+- Use for development only
 
 ### 4. Custom Registries
 
-- ✅ Use environment variables for tokens
-- ✅ Document registry setup
-- ✅ Use .npmrc in project
-- ✅ Don't commit credentials
+- Use environment variables for tokens
+- Document registry setup
+- Use .npmrc in project
+- Don't commit credentials
 
 ### 5. Lifecycle Scripts
 
-- ✅ Use for automation
-- ✅ Keep scripts simple
-- ✅ Test lifecycle behavior
-- ✅ Document what hooks do
+- Use for automation
+- Keep scripts simple
+- Test lifecycle behavior
+- Document what hooks do
 
 ---
 

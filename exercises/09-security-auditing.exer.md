@@ -1,5 +1,7 @@
 #  Hands-On Exercises
 
+[← Previous Exercise](08-npm-cache-exer.md) | [🏠 Home](../README.md) | [Back to module 09](/modules/09-security-auditing.md) | [Next Exercise →](10-publishing-packages-exer.md)
+
 ## Exercise 9.1: Running Your First Audit
 
 **Objective:** Learn to run and interpret npm audit.
@@ -239,7 +241,7 @@ git commit -m "fix: security vulnerabilities"
 ```json
 {
   "scripts": {
-    "audit": "npm audit || true"  // ❌ Ignores all vulnerabilities
+    "audit": "npm audit || true"  //  Ignores all vulnerabilities
   }
 }
 ```

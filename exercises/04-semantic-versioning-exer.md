@@ -1,6 +1,6 @@
 # Hands-On Exercises
 
-[← Previous Exercise](03-installing-packages-exer.md) | [🏠 Home](../README.md) | [Back to module 03](/modules/04-semantic-versioning.md) | [Next Exercise →](05-package-lock-exer.md)
+[← Previous Exercise](03-installing-packages-exer.md) | [🏠 Home](../README.md) | [Back to module 04](/modules/04-semantic-versioning.md) | [Next Exercise →](05-package-lock-exer.md)
 
 ## Exercise 4.1: Understanding Version Numbers
 

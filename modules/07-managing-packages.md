@@ -781,20 +781,20 @@ depcheck
 #!/bin/bash
 # monthly-update.sh
 
-echo "🔍 Checking for outdated packages..."
+echo " Checking for outdated packages..."
 npm outdated
 
-echo "📦 Updating packages..."
+echo " Updating packages..."
 npm update
 
-echo "🧪 Running tests..."
+echo " Running tests..."
 npm test
 
-echo "🧹 Cleaning up..."
+echo " Cleaning up..."
 npm prune
 npm dedupe
 
-echo "✅ Maintenance complete!"
+echo " Maintenance complete!"
 npm list --depth=0
 ```
 
@@ -804,7 +804,7 @@ npm list --depth=0
 #!/bin/bash
 # health-check.sh
 
-echo "📊 Dependency Health Check"
+echo " Dependency Health Check"
 echo "========================="
 
 echo -e "\n1. Outdated packages:"
@@ -859,15 +859,15 @@ if (!run('npm test')) {
   process.exit(1);
 }
 
-console.log('✅ Update successful!');
-console.log('📝 Commit these changes:');
-console.log('   git add package.json package-lock.json');
-console.log('   git commit -m "Update dependencies"');
+console.log(' Update successful!');
+console.log(' Commit these changes:');
+console.log(' git add package.json package-lock.json');
+console.log(' git commit -m "Update dependencies"');
 ```
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/07-managing-packages-exer.md) for this section
 
@@ -893,7 +893,7 @@ console.log('   git commit -m "Update dependencies"');
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Regular Maintenance Schedule
 
@@ -997,7 +997,7 @@ git commit -m "chore(deps): remove unused lodash"
 
 ---
 
-## 📝 Summary
+## Summary
 
 In this module, you learned:
 
@@ -1023,7 +1023,7 @@ In this module, you learned:
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
 Now that you know how to manage packages, it's important to understand NPM's caching system, which can significantly improve installation speed and reliability.
 
@@ -1031,7 +1031,7 @@ Now that you know how to manage packages, it's important to understand NPM's cac
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [NPM Update Documentation](https://docs.npmjs.com/cli/v9/commands/npm-update)
 - [NPM Uninstall Documentation](https://docs.npmjs.com/cli/v9/commands/npm-uninstall)
@@ -1042,7 +1042,7 @@ Now that you know how to manage packages, it's important to understand NPM's cac
 
 ---
 
-## 💬 Discussion
+## Discussion
 
 Have questions about managing packages? Join the discussion:
 - [GitHub Discussions](https://github.com/yourusername/npm-mastery-course/discussions)

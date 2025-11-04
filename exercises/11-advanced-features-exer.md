@@ -1,5 +1,7 @@
 # Hands-On Exercises
 
+[← Previous Exercise](10-publishing-packages-exer.md) | [🏠 Home](../README.md) | [Back to module 11](/modules/11-advanced-features.md) | [Next Exercise →](12-troubleshooting-exer.md)
+
 ## Exercise 11.1: Create a Workspace
 
 **Objective:** Set up a monorepo with workspaces.

@@ -1,5 +1,7 @@
 # Hands-On Exercises
 
+[← Previous Exercise](06-npm-scripts-exer.md) | [🏠 Home](../README.md) | [Back to module 07](/modules/07-managing-packages.md) | [Next Exercise →](08-npm-cache-exer.md)
+
 ## Exercise 7.1: Exploring Installed Packages
 
 **Objective:** Learn to view and understand your dependencies.

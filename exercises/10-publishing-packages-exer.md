@@ -1,5 +1,7 @@
 #  Hands-On Exercises
 
+[← Previous Exercise](09-security-auditing-exer.md) | [🏠 Home](../README.md) | [Back to module 10](/modules/10-publishing-packages.md) | [Next Exercise →](11-advanced-features-exer.md)
+
 ## Exercise 10.1: Create Your First Package
 
 **Objective:** Create and prepare a simple package for publishing.

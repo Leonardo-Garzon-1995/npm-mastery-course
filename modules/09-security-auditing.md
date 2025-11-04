@@ -23,10 +23,10 @@ Security is critical in modern web development. This module covers how to identi
 ### Why Security Matters
 
 **Your dependencies can have:**
-- 🔓 Known vulnerabilities
-- 🐛 Security bugs
-- 🚨 Malicious code
-- ⚠️ Outdated libraries with exploits
+- Known vulnerabilities
+- Security bugs
+- Malicious code
+- Outdated libraries with exploits
 
 **Real-world impact:**
 - Data breaches
@@ -195,7 +195,7 @@ npm audit fix
 npm audit fix --force
 ```
 
-**⚠️ Warning:** `--force` can introduce breaking changes!
+**Warning:** `--force` can introduce breaking changes!
 
 **Dry run (see what would be fixed):**
 ```bash
@@ -429,11 +429,11 @@ npm repo package-name
 ```
 
 **Red flags:**
-- ⚠️ Very few downloads
-- ⚠️ No recent updates
-- ⚠️ No tests
-- ⚠️ No repository
-- ⚠️ Suspicious code in repository
+- Very few downloads
+- No recent updates
+- No tests
+- No repository
+- Suspicious code in repository
 
 ---
 
@@ -739,22 +739,22 @@ snyk monitor
 #!/bin/bash
 # weekly-security-check.sh
 
-echo "🔒 Weekly Security Check"
+echo "Weekly Security Check"
 echo "======================="
 
 # Run audit
-echo -e "\n📊 Running npm audit..."
+echo -e "\n Running npm audit..."
 npm audit
 
 # Check for updates
-echo -e "\n🔄 Checking for updates..."
+echo -e "\n Checking for updates..."
 npm outdated
 
 # Generate report
-echo -e "\n📝 Generating report..."
+echo -e "\n Generating report..."
 npm audit --json > security-report-$(date +%Y%m%d).json
 
-echo -e "\n✅ Security check complete!"
+echo -e "\n Security check complete!"
 ```
 
 ---
@@ -769,42 +769,42 @@ echo -e "\n✅ Security check complete!"
 
 set -e
 
-echo "🔒 Security Workflow Starting..."
+echo "Security Workflow Starting..."
 
 # Step 1: Check for vulnerabilities
-echo -e "\n1️⃣ Checking for vulnerabilities..."
+echo -e "\n1️ Checking for vulnerabilities..."
 npm audit
 
 # Step 2: Try automatic fixes
-echo -e "\n2️⃣ Attempting automatic fixes..."
+echo -e "\n2️ Attempting automatic fixes..."
 npm audit fix
 
 # Step 3: Check if issues remain
-echo -e "\n3️⃣ Checking remaining issues..."
+echo -e "\n3️ Checking remaining issues..."
 REMAINING=$(npm audit --json | grep -c '"severity"' || echo "0")
 
 if [ "$REMAINING" -gt "0" ]; then
-  echo "⚠️  $REMAINING vulnerabilities remain"
+  echo "$REMAINING vulnerabilities remain"
   echo "Manual review required"
   npm audit
   exit 1
 else
-  echo "✅ All vulnerabilities fixed!"
+  echo " All vulnerabilities fixed!"
 fi
 
 # Step 4: Run tests
-echo -e "\n4️⃣ Running tests..."
+echo -e "\n4️ Running tests..."
 npm test
 
 # Step 5: Commit if successful
-echo -e "\n5️⃣ Committing security fixes..."
+echo -e "\n5️ Committing security fixes..."
 git add package.json package-lock.json
 git commit -m "fix: security vulnerabilities
 
 - Fixed $(npm audit --json | grep -c '"severity"') vulnerabilities
 - All tests passing"
 
-echo -e "\n✅ Security workflow complete!"
+echo -e "\n Security workflow complete!"
 ```
 
 ### Example 2: Pre-commit Security Check
@@ -813,13 +813,13 @@ echo -e "\n✅ Security workflow complete!"
 #!/bin/bash
 # .git/hooks/pre-commit
 
-echo "🔒 Running pre-commit security check..."
+echo "Running pre-commit security check..."
 
 # Check for high/critical vulnerabilities
 AUDIT_RESULT=$(npm audit --audit-level=high 2>&1)
 
 if [ $? -ne 0 ]; then
-  echo "❌ Security vulnerabilities found!"
+  echo "Security vulnerabilities found!"
   echo "$AUDIT_RESULT"
   echo ""
   echo "Please fix vulnerabilities before committing:"
@@ -830,7 +830,7 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-echo "✅ No high/critical vulnerabilities"
+echo "No high/critical vulnerabilities"
 exit 0
 ```
 
@@ -842,7 +842,7 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 
 function generateReport() {
-  console.log('📊 Generating Security Report...\n');
+  console.log(' Generating Security Report...\n');
   
   // Run audit
   const audit = execSync('npm audit --json', { encoding: 'utf-8' });
@@ -865,7 +865,7 @@ function generateReport() {
   const filename = `security-report-${Date.now()}.json`;
   fs.writeFileSync(filename, JSON.stringify(report, null, 2));
   
-  console.log(`✅ Report saved: ${filename}`);
+  console.log(` Report saved: ${filename}`);
   console.log('\nSummary:');
   console.log(`  Critical: ${report.summary.critical}`);
   console.log(`  High: ${report.summary.high}`);
@@ -874,7 +874,7 @@ function generateReport() {
   
   // Exit with error if critical vulnerabilities
   if (report.summary.critical > 0) {
-    console.log('\n❌ Critical vulnerabilities found!');
+    console.log('\n Critical vulnerabilities found!');
     process.exit(1);
   }
 }
@@ -884,7 +884,7 @@ generateReport();
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/09-security-auditing-exer.md) for this section
 
@@ -910,7 +910,7 @@ generateReport();
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Run Audits Regularly
 

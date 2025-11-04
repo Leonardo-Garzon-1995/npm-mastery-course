@@ -241,7 +241,7 @@ function capitalize(str) {
  * @param {string} str - The string to reverse
  * @returns {string} The reversed string
  */
-function reverse(str) {
+function reverseStr(str) {
   if (typeof str !== 'string') {
     return str;
   }
@@ -250,7 +250,7 @@ function reverse(str) {
 
 module.exports = {
   capitalize,
-  reverse
+  reverseStr
 };
 ```
 
@@ -271,10 +271,10 @@ npm install my-awesome-package
 ## Usage
 
 ```javascript
-const { capitalize, reverse } = require('my-awesome-package');
+const { capitalize, reverseStr } = require('my-awesome-package');
 
 console.log(capitalize('hello')); // 'Hello'
-console.log(reverse('hello'));    // 'olleh'
+console.log(reverseStr('hello'));    // 'olleh'
 ```
 
 ## API
@@ -537,6 +537,8 @@ npm install my-awesome-package
 
 **Version format: MAJOR.MINOR.PATCH**
 
+>Review [module 04](04-semantic-versioning.md) for more details on versioning.
+
 ```
 1.0.0 → 1.0.1  (Patch - bug fixes)
 1.0.1 → 1.1.0  (Minor - new features)
@@ -668,7 +670,7 @@ npm unpublish my-awesome-package@1.0.0
 npm unpublish my-awesome-package --force
 ```
 
-**⚠️ Unpublishing restrictions:**
+**Unpublishing restrictions:**
 - Can only unpublish within 72 hours
 - Can't unpublish if package has dependents
 - Can't reuse version numbers
@@ -1087,7 +1089,7 @@ function capitalize(str) {
  * @example
  * reverse('hello') // 'olleh'
  */
-function reverse(str) {
+function reverseStr(str) {
   if (typeof str !== 'string') {
     return str;
   }
@@ -1114,14 +1116,14 @@ function titleCase(str) {
 
 module.exports = {
   capitalize,
-  reverse,
+  reverseStr,
   titleCase
 };
 ```
 
 **test/index.test.js:**
 ```javascript
-const { capitalize, reverse, titleCase } = require('../lib/index');
+const { capitalize, reverseStr, titleCase } = require('../lib/index');
 
 describe('String Utilities', () => {
   describe('capitalize', () => {
@@ -1178,7 +1180,7 @@ npm publish
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/10-publishing-packages-exer.md) for this section for the full instructions on how to complete each exercise.
 
@@ -1204,7 +1206,7 @@ npm publish
 
 ---
 
-## ✅ Best Practices Summary
+## Best Practices Summary
 
 ### Before Publishing
 

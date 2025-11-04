@@ -1,6 +1,6 @@
 # Hands-On Exercises
 
-[← Previous Exercise](04-semantic-versioning-exer.md) | [🏠 Home](../README.md) | [Back to module 03](/modules/05-package-lock.md) | [Next Exercise →](06-npm-scripts-exer.md)
+[← Previous Exercise](04-semantic-versioning-exer.md) | [🏠 Home](../README.md) | [Back to module 05](/modules/05-package-lock.md) | [Next Exercise →](06-npm-scripts-exer.md)
 
 ## Exercise 5.1: Understanding Lock Files
 
