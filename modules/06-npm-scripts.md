@@ -17,8 +17,6 @@ NPM scripts are one of the most powerful features of NPM, allowing you to automa
 - Access environment variables in scripts
 - Create cross-platform compatible scripts
 
-**Estimated Time:** 60-75 minutes
-
 ---
 
 ## 6.1 Understanding NPM Scripts
@@ -54,7 +52,7 @@ npm run build    # Runs: webpack
 
 ### Why Use NPM Scripts?
 
-**Instead of:**
+**Instead of typing long commands in your terminal**
 ```bash
 # Typing this every time:
 node server.js
@@ -63,7 +61,7 @@ webpack --mode production --config webpack.prod.js
 jest --coverage --watch
 ```
 
-**You can just do:**
+**You can just do this instead:**
 ```json
 {
   "scripts": {
@@ -84,11 +82,11 @@ npm run test:watch
 ```
 
 **Benefits:**
-- ✅ Shorter, easier to remember commands
-- ✅ Consistent across team members
-- ✅ Works on any platform
-- ✅ Easy to document
-- ✅ Can be chained and automated
+- Shorter, easier to remember commands
+- Consistent across team members
+- Works on any platform
+- Easy to document
+- Can be chained and automated
 
 ---
 
@@ -387,7 +385,7 @@ npm run lint:all    # Runs both linters in parallel
 npm run watch       # Watches both JS and CSS simultaneously
 ```
 
-### Using & for Background Tasks
+### Using (&) for Background Tasks
 
 Run tasks in the background (Unix-based systems):
 
@@ -662,8 +660,8 @@ npm run quiet    # No NPM output, only webpack output
 {
   "scripts": {
     "info": "echo 'Available scripts: dev, build, test'",
-    "build": "echo '🔨 Building...' && webpack",
-    "test": "echo '🧪 Testing...' && jest"
+    "build": "echo ' Building...' && webpack",
+    "test": "echo ' Testing...' && jest"
   }
 }
 ```
@@ -802,7 +800,7 @@ npm run quiet    # No NPM output, only webpack output
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/06-npm-scripts-exer.md) for this section
 
@@ -828,7 +826,7 @@ npm run quiet    # No NPM output, only webpack output
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Use Meaningful Names
 

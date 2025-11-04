@@ -186,7 +186,6 @@ Set up scripts for a Node.js/Express project that includes:
   }
 }
 ```
-
 ---
 
 # Common Pitfalls
