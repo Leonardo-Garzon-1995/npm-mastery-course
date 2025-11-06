@@ -1,5 +1,7 @@
 # Hands-On Exercises
 
+[← Previous Exercise](12-troubleshooting-exer.md) | [🏠 Home](../README.md) | [Back to module 13](/modules/13-real-world-project.md) | [Next Exercise →](14-ci-cd-exer.md)
+
 ## Exercise 13.1: Complete the Setup
 
 **Objective:** Set up the complete project from scratch.

@@ -1143,7 +1143,7 @@ git commit -am "chore: update dependencies"
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/12-troubleshooting-exer.md) for this section for the full instructions on how to complete each exercise.
 
@@ -1168,7 +1168,7 @@ git commit -am "chore: update dependencies"
 **Objective:** Build a diagnostic script.
 ---
 
-## ✅ Best Practices Checklist
+## Best Practices Checklist
 
 ### Project Setup
 - ☐ Initialize with npm init
@@ -1207,7 +1207,7 @@ git commit -am "chore: update dependencies"
 
 ---
 
-## 📝 Summary
+## Summary
 
 In this module, you learned:
 
@@ -1233,7 +1233,7 @@ In this module, you learned:
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
 Congratulations! You now have the knowledge to troubleshoot NPM issues and follow professional best practices. You're ready to apply everything you've learned in a real-world project!
 
@@ -1241,7 +1241,7 @@ Congratulations! You now have the knowledge to troubleshoot NPM issues and follo
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [NPM CLI Documentation](https://docs.npmjs.com/cli/v9)
 - [NPM Error Codes](https://docs.npmjs.com/cli/v9/using-npm/errors)
@@ -1252,7 +1252,7 @@ Congratulations! You now have the knowledge to troubleshoot NPM issues and follo
 
 ---
 
-## 💬 Discussion
+## Discussion
 
 Have questions about troubleshooting? Join the discussion:
 - [GitHub Discussions](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/discussions)

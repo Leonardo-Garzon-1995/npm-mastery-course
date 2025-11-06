@@ -1,5 +1,7 @@
 #  Hands-On Exercises
 
+[← Previous Exercise](11-advanced-features-exer.md) | [🏠 Home](../README.md) | [Back to module 12](/modules/12-troubleshooting.md) | [Next Exercise →](13-real-world-project-exer.md)
+
 ## Exercise 12.1: Simulate and Fix Permission Error
 
 **Objective:** Understand and fix EACCES errors.
