@@ -1333,7 +1333,6 @@ on:
 - Use `act` to test locally
 - Test on feature branches
 - Use pull requests
-
 ---
 
 ## Summary
