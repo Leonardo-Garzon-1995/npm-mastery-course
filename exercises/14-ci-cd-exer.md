@@ -1,5 +1,7 @@
 # Hands-On Exercises
 
+[← Previous Exercise](13-real-world-project-exer.md) | [🏠 Home](../README.md) | [Back to module 14](/modules/14-ci-cd.md) | [Next Exercise →](14-ci-cd-exer.md)
+
 ## Exercise 14.1: Set Up GitHub Actions
 
 **Objective:** Create a basic CI pipeline.
